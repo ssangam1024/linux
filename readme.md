@@ -66,4 +66,48 @@ Valid command continues:
   ⬇ (Displays the output to the user)  
 [User]  
 
-Day -
+Day 3 
+
+Difference between UNIX and Linux
+
+* UNIX is the original operating system, developed in the 1960s. It's paid, closed-source, and mainly used by big companies.
+
+* Linux is a free, open-source operating system inspired by UNIX. It's used by everyone—from beginners to big tech companies—and runs on all kinds of devices like phones, servers, and computers.
+
+Linux File System :
+
+In Linux, everything is treated as a file. There are different types
+
+1. Normal (Ordinary) Files
+
+These are files that contain data, like text, images, videos, audio, or programs.
+
+Example: notes.txt, photo.jpg
+
+2. Directory Files
+
+These are like folders that hold other files or subdirectories.
+
+In Linux, we call them directories instead of folders.
+
+3. Device Files
+
+In Linux, even hardware devices (like USBs, keyboards, or hard drives) are represented as files.
+
+These special files are located in the /dev directory.
+
+They allow the system to communicate with devices.
+
+How to Check File Type in Linux
+Use the command: ls -l
+
+The first character of the output tells you the file type:
+
+Symbol	    File Type	            Description
+
+-	        Ordinary file	         Regular file with data (text, image, etc.)
+d	          Directory	           A folder that can contain files/subfolders
+l	        Symbolic link	         A shortcut pointing to another file
+c	    Character device file	     Used to communicate with character-based devices (like keyboards, serial ports)
+b	       Block device file	     Used with devices that transfer data in blocks (like hard drives)
+s	         Socket file	         Used for communication between processes
