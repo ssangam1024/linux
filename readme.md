@@ -105,9 +105,9 @@ The first character of the output tells you the file type:
 
 Symbol	    File Type	            Description
 
--       Ordinary file	         Regular file with data (text, image, etc.)
-d	          Directory	           A folder that can contain files/subfolders
-l	        Symbolic link	         A shortcut pointing to another file
-c	    Character device file	     Used to communicate with character-based devices (like keyboards, serial ports)
-b	       Block device file	     Used with devices that transfer data in blocks (like hard drives)
-s	         Socket file	         Used for communication between processes
+"-"     Ordinary file	         Regular file with data (text, image, etc.)
+"d"	          Directory	           A folder that can contain files/subfolders
+"l"	        Symbolic link	         A shortcut pointing to another file
+"c"	    Character device file	     Used to communicate with character-based devices (like keyboards, serial ports)
+"b"	       Block device file	     Used with devices that transfer data in blocks (like hard drives)
+"s"	         Socket file	         Used for communication between processes
