@@ -111,3 +111,33 @@ Symbol	    File Type	            Description
 * "c"	    Character device file	     Used to communicate with character-based devices (like keyboards, serial ports)
 * "b"	       Block device file	     Used with devices that transfer data in blocks (like hard drives)
 * "s"	         Socket file	         Used for communication between processes
+
+Day 4
+
+File System Navigation Commands
+
+* . → Current directory
+* .. → Parent directory
+* ~ → Home directory of the current user
+
+Linux File System Hierarchy
+
+Linux has a tree-like structure, starting from the root directory:
+* / → Root directory (the top-most directory of the Linux file system)
+Below are some important subdirectories under /:
+1. /bin → Contains essential binary executables (programs) used by all users, like ls, cp, mv.
+2. /sbin → Contains system binaries used by the superuser (root) for system tasks, like shutdown, reboot.
+3. /etc → Stores system configuration files, like network settings, user accounts, and startup scripts.
+4. /tmp → Temporary files. This directory is usually cleared on reboot.
+5. /dev → Contains special files that represent devices, like hard drives (/dev/sda) or USBs.
+6. /mnt → Temporary mount point for mounting file systems, like external drives.
+7. /media → Used for automatically mounted devices, like USB drives or CDs.
+8. /opt → Optional software packages and third-party applications are stored here.
+9. /lib → Contains shared libraries (like DLL files in Windows) used by programs in /bin and /sbin.
+10. /var → Stores variable data like logs, mail, and databases. Data here changes often.
+11. /usr → Secondary hierarchy for user programs and data. Includes subdirectories like /usr/bin, /usr/lib.
+12. /home → Each user’s personal directory is stored here (e.g., /home/alex).
+13. /proc → A virtual filesystem showing system information like running processes, CPU info, etc.
+14. /boot → Contains boot files, including the Linux kernel and bootloader configuration.
+
+
