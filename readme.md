@@ -141,3 +141,35 @@ Below are some important subdirectories under /:
 14. /boot → Contains boot files, including the Linux kernel and bootloader configuration.
 
 
+Day 8
+
+ls Command in Linux – Explained Simply
+The ls command is used to list files and directories in the current location (called the "working directory").
+
+Common Options for ls
+Command	                 What It Does
+ls	           Lists files/directories in current folder (alphabetical order)
+ls -r	         Lists in reverse alphabetical order
+ls -l	         Long listing: shows permissions, owner, size, and modification date
+ls -t	         Sorts by last modified time (newest files first)
+ls -ltr	       Long listing, sorted by time (oldest files first)
+ls -a	         Shows all files, including hidden files (. prefix)
+ls -A	         Like -a, but excludes . and ..
+ls -F	         Adds file type symbols: / for folders, * for executables, @ for links
+ls -f	         Shows files without sorting and no colors
+ls -i	         Displays each file’s inode number
+ls -R	         Lists all files and folders recursively (includes subfolders)
+ls -s	         Shows file size in blocks
+ls -lh	       Long listing with human-readable sizes (e.g., KB, MB)
+
+
+-rw-r--r--  1  durga  durga  0  Mar 23 12:40  abcdef.txt
+Part	       Meaning
+-rw-r--r--	    File type and permissions
+1	             Number of links to the file
+durga	         Owner (user who owns the file)
+durga	         Group (group the user belongs to)
+0	             File size in bytes
+Mar 23 12:40	 Last modified date & time
+abcdef.txt	   The file name
+
