@@ -175,3 +175,93 @@ Common Options for ls
 *  Mar 23 12:40	 Last modified date & time
 *  abcdef.txt	   The file name
 
+  Day 9
+
+Command Line Arguments
+Arguments passed to a script from the command line.
+Example:
+   ./myscript.sh arg1 arg2 arg3
+    Here, arg1, arg2, arg3 are command line arguments.
+
+Special Variables:
+
+Symbol	    Meaning
+* $#	   Number of arguments
+* $0	   Name of the script
+* $*	   All arguments as one single string
+* $@	   All arguments, each one separately
+* $?	   Exit status (success/fail) of last command
+Difference between $@ and $*
+$@	
+* Each argument is treated separately.	
+* Example: $1, $2, $3	
+
+$* 
+
+* All arguments are combined into one single string.
+* Example: "arg1 arg2 arg3"
+
+$@ is better when you want to loop through arguments one by one.
+
+
+How to Check Default IFS (Internal Field Separator)?
+
+IFS decides how Bash splits strings into words (default is space, tab, and newline).
+
+To check default IFS:
+
+echo "$IFS" | cat -A
+(cat -A shows special characters.)
+
+How to Pass Command Line Arguments?
+
+When you run the script, just add them after the script name:
+
+./myscript.sh apple banana cherry
+
+How to Access Command Line Arguments Inside Script?
+
+Inside the script:
+
+echo "First argument: $1"
+echo "Second argument: $2"
+echo "All arguments: $@"
+echo "Number of arguments: $#"
+
+Main Purpose of Command Line Arguments:
+* Customize the script without editing it.
+For example, different filenames, user names, etc., can be passed when running the script.
+
+Variable Substitution and Command Substitution
+
+Term	                              Meaning
+* Variable substitution	  ----      Using the value of a variable. Example: echo $varname
+* Command substitution	  ----      Running a command and using its output. Example: echo $(date)
+
+Script to Create Log File with Timestamp
+
+# Create a timestamp
+timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+
+# Create a log file with timestamp
+echo "Log started at $timestamp" >> "log_$timestamp.txt"
+> = overwrite
+>> = append
+
+What is a Log File?
+
+* A log file records events, errors, or messages.
+* It helps to track what a script or program is doing.
+Example:logfile.txt might have messages like:
+
+Backup started at 10:00 AM
+Backup completed successfully
+
+How to Find Size of a File?
+Use ls -lh or du -h command:
+
+ls -lh filename
+or
+du -h filename
+* ls -lh shows file size in readable format (KB, MB).
+* du -h also shows size clearly. 
