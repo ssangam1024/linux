@@ -166,14 +166,14 @@ Common Options for ls
 
 -rw-r--r--  1  durga  durga  0  Mar 23 12:40  abcdef.txt
 
-      Part	              Meaning 
-*  -rw-r--r--	    File type and permissions
-*  1	              Number of links to the file
-*  durga	         Owner (user who owns the file)
-*  durga	         Group (group the user belongs to)
-*   0	             File size in bytes
-*  Mar 23 12:40	 Last modified date & time
-*  abcdef.txt	   The file name
+      Part	                  Meaning
+*  -rw-r--r--	 <------>     File type and permissions
+*  1	          <------>    Number of links to the file
+*  durga	    <----->       Owner (user who owns the file)
+*  durga	    <------>      Group (group the user belongs to)
+*   0	        <----->       File size in bytes
+*  Mar 23 12:40	  <----->    Last modified date & time
+*  abcdef.txt	   <---->       The file name
 
   Day 9
 
